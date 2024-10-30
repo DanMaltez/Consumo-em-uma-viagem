@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black
+}
+
+*{
+    font-family: Roboto;
+    text-align: center;
+}
+
+.fundo{
+    min-width: 100%;
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+    height: 100vh;
+    opacity: 60%;
+    filter: blur(3px);
+}
+
+.central{
+    background: rgba(255, 255, 255, 0.589);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 15px;
+    height: fit-content;
+    box-shadow: 3px 10px 10px black;
+}
+
+.central input:focus{
+    background-color: rgb(221, 223, 223);
+}
+
+#distancia{
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+#consumo{
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+#preco{
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.botao{
+text-align: center;
+margin-top: 16px;
+}
+
+.botao button{
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    width: 320px;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgb(0, 153, 255);
+}
+
+.botao button:hover{
+    background-color: rgb(53, 81, 114);
+    transform: translateY(-3px);
+    color: white;
+}
+
+img{
+    width: 150px;
+    display: flex;
+    position: absolute;
+    margin-left: -1720px;
+    margin-top: -860px;
+}
+
+.central input{
+    outline: none;
+}
+
+.central #resultado{
+    color: white;
+    font-size: 20px;
+}
